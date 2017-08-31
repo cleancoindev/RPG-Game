@@ -1,0 +1,147 @@
+/* PLAYER */
+.my-body
+{
+    background-color: #fff7e8;
+    padding: 20px;
+}
+
+.row-player
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.row-player img
+{
+    margin-top: 10px;
+    margin-bottom: -15px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.col-player
+{
+    text-align: center;
+}
+
+.col-player h3
+{
+    position: relative;
+    font-family:"Lucida Grande";
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+/* ENEMY */
+.row-enemy
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#enemy-h2
+{
+    visibility: hidden;
+}
+
+.row-enemy img
+{
+    margin-top: 10px;
+    margin-bottom: -15px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.col-enemy
+{
+    text-align: center;
+}
+
+.col-enemy h3
+{
+    position: relative;
+    font-family:"Lucida Grande";
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+/* COMMAND */
+.row-command
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.row-command li
+{
+    background-color: black;
+    border: 5px solid gold;
+    margin-right: 10px;
+}
+
+.row-command li:hover
+{
+    border: 5px solid indianred;
+}
+
+.row-command img
+{
+    width: 50px;
+    height: 50px;
+    transition: 0.2s ease all;
+}
+
+ul.list-group:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.list-group-item {
+    float: left;
+}
+
+/* BATTLE FIELD */
+.row-battle-arena
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.battle-arena-h2
+{
+    text-align: center;
+}
+
+.row-battle-arena .row-battle-field
+{
+    background-image: url("../images/jungle-arena.jpg");
+    height: 350px;
+    padding-top: 150px;
+    background-size: 600px 400px;
+    background-position: 0px -50px;
+}
+
+.row-battle-arena .row-battle-field img.left_player
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.row-battle-arena .row-battle-field img.left_player_attack
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.row-battle-arena .row-battle-field img.right_player
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+    transform: scaleX(-1);
+}

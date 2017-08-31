@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Game</title>
+    <script src="assets/javascript/jquery.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/shaker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="my-body">
+<div class="row row-player">
+    <h2>Choose your player:</h2>
+    <div class="col-lg-6" id="player-section"></div>
+    <div class="col-lg-6"></div>
+</div>
+<div class="row row-enemy">
+    <h2 id="enemy-h2">Choose your enemy:</h2>
+    <div class="col-lg-6" id="enemy-section"></div>
+    <div class="col-lg-6"></div>
+</div>
+<div class="row row-command">
+    <h2 id="command-h2">Choose your action:</h2>
+    <div class="col-lg-6" id="battle-command">
+        <ul class="list-group">
+            <li class="list-group-item"><img src="assets/images/attack-command.png" alt="Attack" id="attack"></li>
+            <li class="list-group-item" id="magic"><img src="assets/images/magic-command.png" alt="Magic"></li>
+            <li class="list-group-item" id="defend"><img src="assets/images/defence-command.png" alt="Defence"></li>
+        </ul>
+    </div>
+    <div class="col-lg-6"></div>
+</div>
+<div class="row row-battle-arena">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4" id="battle-arena">
+        <h2 class="battle-arena-h2">Junggle Arena</h2>
+        <div class="row row-battle-field">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <div class="progress-bar-danger" id="attacker-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                <p id="attacker-health-point">100/100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img id="attacker" class="left_player" src="assets/images/cloud.png">
+            </div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6" style="float: right">
+                        <div class="progress">
+                            <div class="progress-bar-danger" id="defender-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                <p id="defender-health-point">100/100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img id="defender" class="right_player" src="assets/images/cloud.png">
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+<script src="assets/javascript/bootstrap.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
