@@ -23,7 +23,7 @@
     <h2 id="command-h2">Choose your action:</h2>
     <div class="col-lg-6" id="battle-command">
         <ul class="list-group">
-            <li class="list-group-item"><img src="assets/images/attack-command.png" alt="Attack" id="attack"></li>
+            <li class="list-group-item" id="attack"><img src="assets/images/attack-command.png" alt="Attack"></li>
             <li class="list-group-item" id="magic"><img src="assets/images/magic-command.png" alt="Magic"></li>
             <li class="list-group-item" id="defend"><img src="assets/images/defence-command.png" alt="Defence"></li>
         </ul>
@@ -33,32 +33,39 @@
 <div class="row row-battle-arena">
     <div class="col-lg-4"></div>
     <div class="col-lg-4" id="battle-arena">
-        <h2 class="battle-arena-h2">Junggle Arena</h2>
+        <h2 class="battle-arena-h2">Jungle Arena</h2>
         <div class="row row-battle-field">
+            <div class="row row-congrats">
+                <div class="col-lg-12 col-congrats">
+                    <h1>you win!</h1>
+                </div>
+            </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-attacker">
                         <div class="progress">
-                            <div class="progress-bar-danger" id="attacker-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                                <p id="attacker-health-point">100/100</p>
+                            <div class="progress-bar-danger" id="attacker-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <p id="attacker-health-point">50/100</p>
                             </div>
                         </div>
+                        <img id="attacker" class="left_player" src="assets/images/cloud.png">
+                        <img class="action-effect-attacker left_player_action_effect" src="assets/images/slash.png">
                     </div>
                 </div>
-                <img id="attacker" class="left_player" src="assets/images/cloud.png">
             </div>
             <div class="col-lg-5">
                 <div class="row">
-                    <div class="col-lg-6" style="float: right">
+                    <div class="col-lg-6 col-defender">
                         <div class="progress">
-                            <div class="progress-bar-danger" id="defender-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                                <p id="defender-health-point">100/100</p>
+                            <div class="progress-bar-danger" id="defender-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <p id="defender-health-point">50/100</p>
                             </div>
                         </div>
+                        <img id="defender" class="right_player" src="assets/images/cloud.png">
+                        <img class="action-effect-defender right_player_action_effect" src="assets/images/slash.png">
                     </div>
                 </div>
-                <img id="defender" class="right_player" src="assets/images/cloud.png">
             </div>
             <div class="col-lg-1"></div>
         </div>

@@ -103,6 +103,12 @@ ul.list-group:after {
     float: left;
 }
 
+.battle-command-disabled
+{
+    pointer-events: none;
+    opacity: 0.2 !important;
+}
+
 /* BATTLE FIELD */
 .row-battle-arena
 {
@@ -128,7 +134,15 @@ ul.list-group:after {
 {
     width: 100px;
     height: 100px;
-    float: left;
+    position: absolute;
+}
+
+.row-battle-arena .row-battle-field img.left_player_defeated
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: rotate(-90deg);
 }
 
 .row-battle-arena .row-battle-field img.left_player_attack
@@ -138,10 +152,74 @@ ul.list-group:after {
     float: right;
 }
 
+.row-battle-arena .row-battle-field img.left_player_action_effect
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
 .row-battle-arena .row-battle-field img.right_player
 {
     width: 100px;
     height: 100px;
-    float: right;
+    position: absolute;
+    right: 0;
     transform: scaleX(-1);
+}
+
+.row-battle-arena .row-battle-field img.right_player_defeated
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg) scaleX(-1);
+}
+
+.row-battle-arena .row-battle-field img.right_player_attack
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    transform: scaleX(-1);
+}
+
+.row-battle-arena .row-battle-field img.right_player_action_effect
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    transform: scaleX(1);
+}
+
+.col-attacker
+{
+    float: left;
+}
+
+.col-defender
+{
+    float: right;
+}
+
+/* WIN / LOSE */
+
+.col-congrats
+{
+    text-align: center;
+    position: absolute;
+    left: 1%;
+}
+
+.col-congrats h1
+{
+    text-transform: capitalize;
+    color: gold;
+    letter-spacing: 5px;
+    font-size: 55pt;
+    margin-top: -110px;
+    text-shadow: 5px 5px 0 black;
 }
