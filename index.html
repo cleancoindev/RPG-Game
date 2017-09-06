@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RPG Game</title>
     <script src="assets/javascript/jquery.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -10,17 +11,17 @@
 </head>
 <body class="my-body">
 <div class="row row-player">
-    <h2>Choose your player:</h2>
+    <h2>Choose your <b>player</b>:</h2>
     <div class="col-lg-6" id="player-section"></div>
     <div class="col-lg-6"></div>
 </div>
 <div class="row row-enemy">
-    <h2 id="enemy-h2">Choose your enemy:</h2>
+    <h2 id="enemy-h2">Choose your <b>enemy</b>:</h2>
     <div class="col-lg-6" id="enemy-section"></div>
     <div class="col-lg-6"></div>
 </div>
 <div class="row row-command">
-    <h2 id="command-h2">Choose your action:</h2>
+    <h2 id="command-h2">Choose your <b>action</b>:</h2>
     <div class="col-lg-6" id="battle-command">
         <ul class="list-group">
             <li class="list-group-item" id="attack"><img src="assets/images/attack-command.png" alt="Attack"></li>
@@ -37,7 +38,8 @@
         <div class="row row-battle-field">
             <div class="row row-congrats">
                 <div class="col-lg-12 col-congrats">
-                    <h1>you win!</h1>
+                    <h1 id="you-win-lose">you win!</h1>
+                    <button class="btn btn-warning btn-restart">Restart Game</button>
                 </div>
             </div>
             <div class="col-lg-1"></div>
@@ -46,7 +48,7 @@
                     <div class="col-lg-6 col-attacker">
                         <div class="progress">
                             <div class="progress-bar-danger" id="attacker-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                <p id="attacker-health-point">50/100</p>
+                                <p id="attacker-health-point">0/0</p>
                             </div>
                         </div>
                         <img id="attacker" class="left_player" src="assets/images/cloud.png">
@@ -59,7 +61,7 @@
                     <div class="col-lg-6 col-defender">
                         <div class="progress">
                             <div class="progress-bar-danger" id="defender-health-progress-bar" role="progressbar" aria-valuenow="-" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                <p id="defender-health-point">50/100</p>
+                                <p id="defender-health-point">0/0</p>
                             </div>
                         </div>
                         <img id="defender" class="right_player" src="assets/images/cloud.png">

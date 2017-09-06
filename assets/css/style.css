@@ -1,8 +1,17 @@
 /* PLAYER */
+html
+{
+    background-image: url("../images/ff-wallpaper.png");
+    background-position-y: -150px;
+    background-position-x: -300px;
+}
+
 .my-body
 {
-    background-color: #fff7e8;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     padding: 20px;
+    background-color: transparent;
 }
 
 .row-player
@@ -20,6 +29,11 @@
     position: relative;
 }
 
+.row-player h2
+{
+    font-family:"Trebuchet MS";
+}
+
 .col-player
 {
     text-align: center;
@@ -28,7 +42,7 @@
 .col-player h3
 {
     position: relative;
-    font-family:"Lucida Grande";
+    font-family:"Trebuchet MS";
     text-transform: capitalize;
     letter-spacing: 2px;
 }
@@ -43,6 +57,7 @@
 #enemy-h2
 {
     visibility: hidden;
+    font-family:"Trebuchet MS";
 }
 
 .row-enemy img
@@ -62,7 +77,7 @@
 .col-enemy h3
 {
     position: relative;
-    font-family:"Lucida Grande";
+    font-family:"Trebuchet MS";
     text-transform: capitalize;
     letter-spacing: 2px;
 }
@@ -119,6 +134,9 @@ ul.list-group:after {
 .battle-arena-h2
 {
     text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 0 white;
+    font-weight: bold;
 }
 
 .row-battle-arena .row-battle-field
@@ -222,4 +240,12 @@ ul.list-group:after {
     font-size: 55pt;
     margin-top: -110px;
     text-shadow: 5px 5px 0 black;
+}
+
+.btn-restart
+{
+    color: white;
+    width: 150px;
+    text-shadow: 1px 1px 0 black;
+    font-size: 12pt;
 }
