@@ -13,10 +13,10 @@ var battleBGM = document.createElement("audio"),
         "assets/images/squall.png"
     ],
     "player_hp":[
-        "200",
+        "350",
+        "1000",
         "500",
-        "150",
-        "250"
+        "350"
     ],
     "player_strength":[
         "20",
