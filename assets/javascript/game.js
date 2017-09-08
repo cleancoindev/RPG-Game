@@ -19,10 +19,10 @@ var battleBGM = document.createElement("audio"),
         "350"
     ],
     "player_strength":[
-        "20",
-        "25",
-        "10",
-        "20"
+        "40",
+        "100",
+        "30",
+        "40"
     ],
     "actions_image":[
         "assets/images/slash.png",
