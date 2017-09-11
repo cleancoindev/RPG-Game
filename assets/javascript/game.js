@@ -607,6 +607,15 @@ $(document).ready(function() {
     });
 
     $(".btn-restart").on("click", function () {
-        location.reload();
+        $.ajax({
+            url: "http://localhost:63343/Hansel_UCLA/RPG-Game/index.html?_ijt=pmdqgeo3o45387b84n2o0n60gf",
+            cache: false,
+            success: function(content) {
+                $("body").html(content);
+            }
+        });
+        battleBGM.pause();
+        battleBGM.setAttribute("src", this.bgm_sfx[0]);
+        battleBGM.play();
     });
 });
