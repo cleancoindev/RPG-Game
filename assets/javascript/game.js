@@ -608,7 +608,7 @@ $(document).ready(function() {
 
     $(".btn-restart").on("click", function () {
         $.ajax({
-            url: "https://hanselgunawan.github.io/RPG-Game/",
+            url: "http://hanselgunawan.github.io/RPG-Game/",
             cache: false,
             success: function(content) {
                 $("body").html(content);
