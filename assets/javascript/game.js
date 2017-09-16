@@ -607,15 +607,6 @@ $(document).ready(function() {
     });
 
     $(".btn-restart").on("click", function () {
-        $.ajax({
-            url: "/hanselgunawan.github.io/RPG-Game/",
-            cache: false,
-            success: function(content) {
-                $("body").html(content);
-            }
-        });
-        battleBGM.pause();
-        battleBGM.setAttribute("src", this.bgm_sfx[0]);
-        battleBGM.play();
+        location.reload();
     });
 });
